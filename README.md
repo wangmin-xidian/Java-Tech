@@ -1,2 +1,2 @@
-# JavaInterview
-day day study for interview !
+# Java Technology
+day day study !
