@@ -3,12 +3,16 @@
 *****************************************
 **一面**
  1. 常见集合类的区别和适用场景 
+    > [Collection/Map常见集合类说明](https://github.com/wangmin-xidian/Java-Tech/blob/master/collections/%E5%B8%B8%E8%A7%81%E9%9B%86%E5%90%88%E7%B1%BB%E7%9A%84%E7%90%86%E8%A7%A3.md)
+    
  2. 并发容器了解哪些  
-  - 并发容器的原理，7大并发容器详解、及使用场景  : http://youzhixueyuan.com/use-of-concurrent-containers.html
+    > [7大并发容器说明](https://github.com/wangmin-xidian/Java-Tech/blob/master/collections/%E5%B9%B6%E5%8F%91%E5%AE%B9%E5%99%A8%E7%9A%84%E7%90%86%E8%A7%A3.md)
   
- 3. 如何判断链表是否有环  
+ 3. 如何判断链表是否有环？
+    > 最优方法：快慢指针。定义两个指针，分别指向head,然后设置不同的步长开始遍历，若快慢指针能相遇，则表示有环。
+  
  4. ConcurrentHashMap如何实现 
- - ConcurrentHashMap的实现原理(JDK1.7和JDK1.8) : http://youzhixueyuan.com/concurrenthashmap.html
+   - ConcurrentHashMap的实现原理(JDK1.7和JDK1.8) : http://youzhixueyuan.com/concurrenthashmap.html
  
  5. 集群服务器如何application共享  
  6. JVM网络编程中：BIO、NIO、AIO的区别和联系  
