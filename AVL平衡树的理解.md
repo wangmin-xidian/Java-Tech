@@ -53,8 +53,71 @@
 3. 源码实现   
  https://github.com/wangmin-xidian/Java-Tech/tree/master/src/main/java/com/min/algorithm/avltree
  
+ 
+- B Tree, B-,B+, B*   
+B树：二叉树，每个结点只存储一个关键字，等于则命中，小于走左结点，大于走右结点；    
+B-树：多路搜索树，每个结点存储M/2到M个关键字，非叶子结点存储指向关键字范围的子结点；所有关键字在整颗树中出现，且只出现一次，非叶子结点可以命中；   
+B+树：在B-树基础上，为叶子结点增加链表指针，所有关键字都在叶子结点中出现，非叶子结点作为叶子结点的索引；B+树总是到叶子结点才命中；     
+B*树：在B+树基础上，为非叶子结点也增加链表指针，将结点的最低利用率从1/2提高到2/3；    
+
+- 红黑树：     
+1、每个节点不是红的就是黑的；    
+2、根节点是黑的；     
+3、每个叶子节点（也就是树的尾端NULL节点）是黑的；      
+4、如果一个节点是红的，那么左右子树均为黑的（需要注意的一点是，两个红节点不可能连接在一起）     
+5、对于每个节点，从此节点到叶子的所有路径的黑色节点数目均相同。     
+
+ 
+个人技能&评价
+	
+	使用的框架和工具：Rational, Github, GitLab, MyBatis, Log4J, HikariCP, P3C, Spring, Protobuf, Maven, Gradle, SonarQube, JUnit, TestNG, MySQL, Postgres, MongoDB, Tomcat, Postman, REST API, Swagger, Guava, Lombok
+
+
+MES-BOM管理 2018/1- 2018/6
+	项目描述：根据某厂定制化需求，完成BOM物料清单的管理，从ERP系统获取到BOM料表，根据特定业务需要将其转换为发料料表/上料料表/对料料表。给生产前期的仓库备料、产前的上料/对料提供标准，实现自动化智能化，并减少车间操作员的人为录入错误。
+	项目职责：
+	1. 参与厂区需求讨论，设计代码架构和数据表结构，并依据敏捷开发流程制定Iteration plan；
+	2. 协调UI同事，负责沟通并讨论页面设计与用户体验，使用Mockup设计UI原型图；
+	3. 协调测试同事，负责沟通并讨论页面及系统功能测试case，使用TestNG/Gradle+Sonarqube完成单元测试和代码检测；
+	4. 开发BOM料表生成、最大模型查询、实现从ERP获取的BOM转换为所需的仓库房所需发料料表；
+	5. 实现对比Flexa料表功能，帮助车间管理人员定期去比对料表与生产机台使用料表；
+	6. 实现定制化料表查阅并支持批量下载500份料表，帮助车间管理人员可自动获取并download车间所使用的机种BOM料表；
+	7. 开发基础资料模块包含料号、机种、工单等数据，存储并维护厂区使用的基础资料；
+	8. 基于Log4J框架，按具体功能模块清楚定义log信息，并使用log的热部署功能，动态调整log打印级别；
+	9. 负责Code review，参考公司内部规范+Ali的Java开发手册；
+	10. 负责部署及后期feedback收集。
+
+MES-途程管理（WIP追溯）2017/11 - 至今
+	项目描述：依据工厂生产的产品的工艺，构建产品的标准途程数据，自动化智能化地指导产品生产流程。同时提供途程可视化，方便车间人员实时查看产品所处工作站及当前生产状态及信息。并且可从工单、产品、物料不同的粒度来追溯生产状况。
+	
+	项目职责：
+	1. 参与厂区需求讨论，并结合ISA95深度调研途程管理的实现方式，讨论并确定技术选型：Flowable BPMN；
+	2. 设计并使用Pencil/ProcessOn画出流程图，并依据敏捷开发流程制定Iteration plan；
+	3. 与UI同事一起调研Web端展示途程的可视化框架，最终确立使用mxgraph框架在web端展示途程信息；
+	4. 根据厂区特定的产品及产线机台设备，开发途程的设定功能，并提供Json格式API供Web端编辑展示；
+	5. 使用SpringBoot+Flowable框架，并通过REST API形式获取数据动态创建BPMN（In Progress）
+	
+MES-仓库管理系统（WMS）2016/5 - 2017/11
+	项目描述：管理物料从入库到出库过程中涉及到的仓库作业，包括入库、上架位、拣货、库存管理、库管盘点、以及和生产车间之间的物料发料等。通过使用标签化管理资源，并使用手持设备进行扫描录入，提供工作自动化智能化并减少人为损失。通过与EPR系统的集成，密切关注产中所需物料及库存信息，提供仓库、产线利用率，有效预防爆仓。
+	项目职责： 
+	1. 参与厂区需求讨论，设计代码结构和数据表结构，
+	2. 开发仓库内的路径规划功能，使用grid建立仓库地图模型，结合A*算法规划路径，为拣货和点灯系统做辅助视觉功能；
+	3. 使用Gradle+groovy语言脚本，实现项目的定制化build；
+	4. 集成Jacoco+Sonarqube到Gradle中，完成自动化的单元测试代码覆盖率的报表；
+	5. 开发仓库的入库和上架位功能，实现物料入库操作和入库情况查询。	
+
+
+ 
+ 
+ 
+ 
+ 
 
 **reference** 
+
+浅谈AVL树,红黑树,B树,B+树原理及应用 https://blog.csdn.net/whoamiyang/article/details/51926985
+
+关于树的总结从二叉树->二叉搜索树->平衡二叉树->红黑树->B树与B+树  https://blog.csdn.net/xygl2009/article/details/46835675
 
 1. 数据结构&&AVL树原理、插入操作详解及实现   
 https://blog.csdn.net/sp_programmer/article/details/41812787
@@ -72,4 +135,6 @@ https://blog.csdn.net/whucyl/article/details/17289841
 
 6. Delete operations on AVL trees （包含源码）
 http://www.mathcs.emory.edu/~cheung/Courses/323/Syllabus/Trees/AVL-delete.html
+
+
 
