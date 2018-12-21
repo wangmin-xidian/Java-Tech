@@ -46,10 +46,10 @@ day day study !
   - ZGC（concurrent garbage collector，only available on Linux/x64）
   
 Reference:    
-- Java版本历史和新特性: https://blog.csdn.net/yuanjin_1990/article/details/80612437
-- JAVA8 十大新特性详解: https://www.cnblogs.com/xingzc/p/6002873.html
-- JDK 8 中的新特性: https://www.oracle.com/technetwork/cn/java/javase/8-whats-new-2157071-zhs.html
-- JDK Release Notes： https://www.oracle.com/technetwork/java/javase/jdk-relnotes-index-2162236.html
+- [Java版本历史和新特性](https://blog.csdn.net/yuanjin_1990/article/details/80612437)      
+- [JAVA8 十大新特性详解](https://www.cnblogs.com/xingzc/p/6002873.html)
+- [JDK 8 中的新特性](https://www.oracle.com/technetwork/cn/java/javase/8-whats-new-2157071-zhs.html)
+- [JDK Release Notes](https://www.oracle.com/technetwork/java/javase/jdk-relnotes-index-2162236.html)
 
 
 
