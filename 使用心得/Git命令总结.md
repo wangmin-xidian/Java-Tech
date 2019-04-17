@@ -7,7 +7,7 @@
 * [实践命令总结](#实践命令总结)   
 ----
 
-**从git远端fork到本地** 
+## 从git远端fork到本地 
 - Git global setup
     - git config --global user.name name
     - git config --global user.email mail
@@ -32,8 +32,8 @@
     - git push -u origin --all
     - git push -u origin --tags
 *********************************
-**gitbook命令guide**
-*********************************
+## gitbook命令guide
+
 1. 查询修改Git 本地配置 
 	- git config --list  查看所有配置
 	- git config --global user.name name  修改 
@@ -107,8 +107,8 @@
 	- git branch --merged 查看已经merge过的分支 （--no-merged）
 
 ***************************
-**实践命令总结**
-*************************
+## 实践命令总结
+
 1. 创建文件  touch file  
 2. 创建文件夹  mddir dir  
 3. 查看状态  git  status 
