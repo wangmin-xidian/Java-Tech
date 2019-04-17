@@ -2,12 +2,12 @@
 **Git命令使用总结**  2019/04/17
 ********************************
 ## 目录 
-* [一. 从git远端fork到本地](#从git远端fork到本地)   
-* [二.gitbook命令Guide](#gitbook命令Guide)   
-* [三. 实践命令总结](#实践命令总结)   
+* [从git远端fork到本地](#从git远端fork到本地)   
+* [gitbook命令guide](#gitbook命令guide)   
+* [实践命令总结](#实践命令总结)   
 ----
 
-**一. 从git远端fork到本地** 
+**从git远端fork到本地** 
 - Git global setup
     - git config --global user.name name
     - git config --global user.email mail
@@ -32,7 +32,7 @@
     - git push -u origin --all
     - git push -u origin --tags
 *********************************
-**二. gitbook命令Guide**
+**gitbook命令guide**
 *********************************
 1. 查询修改Git 本地配置 
 	- git config --list  查看所有配置
@@ -107,7 +107,7 @@
 	- git branch --merged 查看已经merge过的分支 （--no-merged）
 
 ***************************
-**三. 实践命令总结**
+**实践命令总结**
 *************************
 1. 创建文件  touch file  
 2. 创建文件夹  mddir dir  
