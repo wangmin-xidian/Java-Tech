@@ -91,9 +91,20 @@
 	两种标签：轻量标签，附注标签 
 	- git tag -a [tagname] -m " "  创建一个附注标签 
 	- git tag [tagname] 创建轻量标签 
-	- git tag -a [tagname] checksum   选择某个提交，根据提交的校验和打标签 	
-	- git push [remote-name] [tagname]  共享标签，将标签推送到远程仓库
-	- git push [remote-name] --tags   将所有不在远程仓库的标签全部推送过去	
+	
+	- git log --pretty=oneline 查看所有的commit提交历史（包含checksum）
+	- git tag -a [tagname] -m " " checksum   选择某个提交，根据提交的校验和打标签 	
+	
+	- git push origin [tagname]  共享标签，将标签推送到远程仓库
+	- git push origin --tags   将所有不在远程仓库的标签全部推送过去	
+	
+	- git tag -d [tagname]  删除本地tag 
+	- git push origin :[tagname] 删除远程tag 
+	- git push origin --delete tag [tagname]   删除远程tag 
+	
+	
+	
+	
 18. git命令的别名 
 	- git config --global alias.st status   给status设置别名为st 	
 19. 分支 
